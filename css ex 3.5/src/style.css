@@ -1,0 +1,61 @@
+/* style.css */
+
+body {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    overflow-y: auto;
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+.header_line {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.client_stories {
+    column-count: 3;
+    column-gap: 20px;
+    width: calc(70% - 20px);
+}
+
+.client_stories h2 {
+    column-span: all;
+}
+
+.features {
+    column-count: 2;
+    column-gap: 0;
+    width: calc(70% - 20px);
+}
+
+.info {
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+
+form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.header_line,
+aside {
+    z-index: 1;
+}

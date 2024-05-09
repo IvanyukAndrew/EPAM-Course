@@ -1,0 +1,100 @@
+/* style.css */
+
+/* Fix invalid Flexbox properties */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add the display property to nav ul to make it flexible */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* Add the necessary flex-direction to <section class="title_section"> */
+.title_section {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+/* Make every <div> in each <section> in<main> flexible */
+main section div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Implement changes to align the "Client stories" section */
+.column {
+    flex-grow: 1;
+}
+
+section:first-of-type div:first-of-type .column:first-of-type {
+    flex-grow: 2;
+}
+
+.card_selectors {
+    order:inherit;
+    flex-grow: inherit;
+}
+
+/* Implement changes for the "Features" section */
+.card-first {
+    order: 1;
+    flex-grow: 1;
+}
+
+.card-second {
+    order: 2;
+    flex-grow: 1;
+}
+
+.card-third {
+    order: 3;
+    flex-grow: 1;
+}
+
+.card-fourth {
+    order: 4;
+    flex-grow: 1;
+}
+
+.card-fifth {
+    order: 5;
+    flex-grow: 4;
+}
+
+.card-six {
+    order: 6;
+    flex-grow: 4;
+}
+
+/* Implement changes in the footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .title_section {
+        flex-wrap: wrap;
+    }
+}
+
+.header_line {
+    display: flex;
+    align-items: center;
+}
